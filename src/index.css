@@ -1,0 +1,105 @@
+/* src/index.css - VERSION WITH BRIGHTER COLORS & WIDER LAYOUT */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  /* BACKGROUND LEBIH CERAH - dari slate gelap ke slate terang */
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  color: #f1f5f9;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* ANIMATED BACKGROUND LEBIH CERAH DAN BERWARNA */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.2), transparent 40%),
+              radial-gradient(circle at 90% 70%, rgba(168, 85, 247, 0.15), transparent 50%),
+              radial-gradient(circle at 40% 80%, rgba(34, 211, 238, 0.12), transparent 45%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ===== LAYOUT LEBIH LEBAR ===== */
+.container {
+  max-width: 1600px;     /* DARI 1280px JADI 1600px - LEBIH LEBAR */
+  margin: 0 auto;
+  padding: 0 3rem;       /* DARI 1.5rem JADI 3rem - masih ada ruang napas */
+  position: relative;
+  z-index: 1;
+}
+
+/* UNTUK LAYAR SEDANG (tablet) */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+/* UNTUK MOBILE */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  background: linear-gradient(135deg, #ffffff, #7dd3fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.section {
+  padding: 5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3.5rem 0;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Scroll reveal animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  animation: fadeUp 0.6s ease forwards;
+}
