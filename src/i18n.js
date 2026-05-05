@@ -137,7 +137,7 @@ const translations = {
     certTitle: "Certifications",
 
     cert1Title: "Supply Chain & Inventory Management",
-    cert1Issuer: "IOD Academy",
+    cert1Issuer: "IODA Academy",
     cert1Badge: "Verified Certification",
     cert1Credential: "https://app.iodacademy.id/portal-belajar/verify/BSCM-20260403-YG7L1",
     cert1PDF: "https://app.iodacademy.id/portal-belajar/verify/BSCM-20260403-YG7L1",
@@ -300,7 +300,7 @@ const translations = {
     certTitle: "Sertifikasi",
 
     cert1Title: "Supply Chain & Inventory Management",
-    cert1Issuer: "IOD Academy",
+    cert1Issuer: "IODA Academy",
     cert1Badge: "Sertifikasi Terverifikasi",
     cert1Credential: "https://app.iodacademy.id/portal-belajar/verify/BSCM-20260403-YG7L1",
     cert1PDF: "https://app.iodacademy.id/portal-belajar/verify/BSCM-20260403-YG7L1",
