@@ -61,7 +61,7 @@ function Hero() {
         </div>
         <div className="hero-visual">
           <div className="hero-photo">
-            <img src="/ST200025.JPG" alt="Industrial Engineer" />
+            <img src="/ST200024.JPG" alt="Industrial Engineer" />
             <div className="photo-glow"></div>
           </div>
           <div className="floating-elements">
