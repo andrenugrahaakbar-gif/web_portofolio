@@ -115,7 +115,7 @@ const translations = {
     exp2Achievement2: "Contribution to practicum quality improvement",
 
     exp3Title: "Inventory Intern at PT Semen Padang",
-    exp3Period: "2024",
+    exp3Period: "January 2024 – February 2024",
     exp3Desc: "Validated inventory data between SAP systems and physical stock, improving accuracy and material traceability in warehouse operations.",
     exp3Achievement1: "Inventory data validation and alignment",
     exp3Achievement2: "Improved material traceability",
@@ -272,13 +272,13 @@ const translations = {
     exp1Achievement2: "Insight data yang mendukung pengambilan keputusan",
 
     exp2Title: "Laboratory Assistant and HRD Staff",
-    exp2Period: "June 2024 – June 2025",
+    exp2Period: "Juni 2024 – Juni 2025",
     exp2Desc: "Membimbing praktikum di bidang pemrograman, sistem informasi, dan data analytics. Mendampingi mahasiswa dalam project berbasis data serta terlibat dalam proses rekrutmen dan pengembangan asisten.",
     exp2Achievement1: "Pendampingan project berbasis data",
     exp2Achievement2: "Kontribusi pada peningkatan kualitas praktikum",
 
     exp3Title: "Inventory Intern at PT Semen Padang",
-    exp3Period: "2024",
+    exp3Period: "Januari 2024 - Februari 2024",
     exp3Desc: "Melakukan validasi data inventory antara sistem SAP dan kondisi fisik, serta meningkatkan akurasi dan traceability data material di gudang.",
     exp3Achievement1: "Validasi kesesuaian data inventory",
     exp3Achievement2: "Peningkatan keterlacakan data material",
