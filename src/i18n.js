@@ -103,7 +103,7 @@ const translations = {
     organizationExp: "Organization Experience",
     
     exp1Title: "Freelance Data Visualization Analyst",
-    exp1Period: "September 2025 - Present",
+    exp1Period: "September 2025 – March 2026",
     exp1Desc: "Developing interactive dashboards using Power BI, transforming data into actionable insights, and collaborating with clients to support business analysis needs.",
     exp1Achievement1: "Interactive dashboards for business analysis",
     exp1Achievement2: "Data insights for operational decision-making",
@@ -266,7 +266,7 @@ const translations = {
     organizationExp: "Pengalaman Organisasi",
     
     exp1Title: "Freelance Data Visualization Analyst",
-    exp1Period: "September 2025 - Sekarang",
+    exp1Period: "September 2025 –Maret 2026",
     exp1Desc: "Mengembangkan dashboard interaktif menggunakan Power BI, mengolah data menjadi insight yang actionable, serta berkolaborasi dengan klien untuk memenuhi kebutuhan analisis bisnis.",
     exp1Achievement1: "Dashboard interaktif untuk kebutuhan analisis bisnis",
     exp1Achievement2: "Insight data yang mendukung pengambilan keputusan",
