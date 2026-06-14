@@ -16,6 +16,9 @@ function About() {
           <p className="about-text">
             {t('aboutText2')}
           </p>
+          <p className="about-text">
+            {t('aboutText3')}
+          </p>
           <div className="core-values">
             <div className="value-item">
               <i className="fas fa-chart-line"></i>
