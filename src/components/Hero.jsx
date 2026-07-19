@@ -8,11 +8,6 @@ function Hero() {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  // Tentukan file CV berdasarkan bahasa
-  const cvFile = language === 'id' 
-    ? '/Andre Nugraha Akbar_CV.pdf' 
-    : '/Andre Nugraha Akbar-CV.pdf';
-
   return (
     <section className="section hero-section" id="home">
       <div className="hero">
@@ -40,9 +35,6 @@ function Hero() {
             <button onClick={() => scrollToSection('contact')} className="btn btn-outline">
               <i className="fas fa-paper-plane"></i> {t('contactMe')}
             </button>
-            <a href={cvFile} download className="btn btn-outline">
-              <i className="fas fa-download"></i> {t('downloadCV')}
-            </a>
           </div>
           <div className="hero-stats">
             <div className="stat-item">
