@@ -52,7 +52,7 @@ const translations = {
     // Projects
     projectsTag: "Portfolio",
     projectsTitle: "Featured Projects",
-    project1Title: "Smart Inventory Management System",
+    project1Title: "Demand Forecasting & Inventory Optimization System",
     project1Badge: "XGBoost · EOQ · ROP · Streamlit",
     project1Desc: "Demand forecasting and inventory control system for 1,163 SKUs using XGBoost with lag, rolling, and temporal feature engineering. Forecast results drive automated EOQ, ROP, and Safety Stock calculations — deployed as an interactive Streamlit DSS dashboard.",
     project1Metric1: "1,163",
@@ -214,7 +214,7 @@ const translations = {
     // Projects
     projectsTag: "Portofolio",
     projectsTitle: "Proyek Unggulan",
-    project1Title: "Smart Inventory Management System",
+    project1Title: "Demand Forecasting & Inventory Optimization System",
     project1Badge: "XGBoost · EOQ · ROP · Streamlit",
     project1Desc: "Sistem forecasting permintaan dan kontrol inventori untuk 1.163 SKU menggunakan XGBoost dengan feature engineering lag, rolling, dan temporal. Hasil prediksi digunakan untuk kalkulasi otomatis EOQ, ROP, dan Safety Stock — ditampilkan dalam dashboard DSS interaktif berbasis Streamlit.",
     project1Metric1: "1.163",
