@@ -15,8 +15,8 @@ function Projects() {
         { value: t('project1Metric3'), label: t('project1Metric3Label') }
       ],
       impacts: [t('project1Impact1'), t('project1Impact2'), t('project1Impact3')],
-      reportLinkID: "Multi-Depot-Distribution-Optimizer-DSS(Ind).pdf",
-      reportLinkEN: "Multi-Depot-Distribution-Optimizer-DSS(Eng).pdf",
+      reportLinkID: "Demand Forecasting & Inventory Optimization Decision Support System(Ind).pdf",
+      reportLinkEN: "Demand Forecasting & Inventory Optimization Decision Support System(Eng).pdf",
       liveLink: "https://inventory-ml-dashboard.streamlit.app"
     },
     {
