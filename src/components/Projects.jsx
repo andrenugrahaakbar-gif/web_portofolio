@@ -45,8 +45,8 @@ function Projects() {
         { value: t('project3Metric3'), label: t('project3Metric3Label') }
       ],
       impacts: [t('project3Impact1'), t('project3Impact2'), t('project3Impact3')],
-      reportLinkID: "Supplier-Performance-Analytics-Dashboard(Ind).pdf",
-      reportLinkEN: "Supplier-Performance-Analytics-Dashboard(Eng).pdf",
+      reportLinkID: "Supplier Performance Analytics & Risk Prediction System(Ind).pdf",
+      reportLinkEN: "Supplier Performance Analytics & Risk Prediction System(Eng).pdf",
       liveLink: "https://lead-time-po-late-prediction.streamlit.app"
     }
   ]
