@@ -78,7 +78,7 @@ const translations = {
     project2Impact2: "Zero vehicle overloads after optimization vs. chronic overload at DC2 & DC3",
     project2Impact3: "40.52% suboptimal allocations eliminated via ILP-based DC assignment",
 
-    project3Title: "Supplier Performance Analytics Dashboard",
+    project3Title: "Supplier Performance Analytics & Risk Prediction System",
     project3Badge: "ML · Regression · Classification · Streamlit",
     project3Desc: "ML-based DSS for supply chain optimization — predicts lead times and PO delay risk per supplier using a dual-model approach: Lead Time Regression + IsLate Binary Classifier. Features a 3-tier risk system and bilingual interactive dashboard.",
     project3Metric1: "18.8",
@@ -240,7 +240,7 @@ const translations = {
     project2Impact2: "Nol kendaraan overload setelah optimasi vs. overload kronis di DC2 & DC3",
     project2Impact3: "40,52% alokasi suboptimal dieliminasi melalui penugasan DC berbasis ILP",
 
-    project3Title: "Supplier Performance Analytics Dashboard",
+    project3Title: "Supplier Performance Analytics & Risk Prediction System",
     project3Badge: "ML · Regresi · Klasifikasi · Streamlit",
     project3Desc: "DSS berbasis ML untuk optimasi supply chain — memprediksi lead time dan risiko keterlambatan PO per supplier menggunakan pendekatan dual-model: Regresi Lead Time + Klasifikasi Biner IsLate. Dilengkapi sistem risiko 3-tier dan dashboard interaktif bilingual.",
     project3Metric1: "18,8",
