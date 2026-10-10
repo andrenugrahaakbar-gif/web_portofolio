@@ -297,7 +297,7 @@
 
 /* ===== ABOUT SECTION ===== */
 .about-wrapper {
-  max-width: 920px;   /* ← dari 1100px → 920px */
+  max-width: 980px;   /* ← dari 1100px → 920px */
   margin: 0 auto;
   padding: 0 1rem;
 }
