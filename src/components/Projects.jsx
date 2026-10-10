@@ -1,14 +1,22 @@
 import { useLanguage } from '../context/LanguageContext';
+import { useState } from 'react';
+
+import thumbForecasting from '../assets/projects/forecasting.png';
+import thumbDistribution from '../assets/projects/distribution.png';
+import thumbSupplier from '../assets/projects/supplier.png';
 
 function Projects() {
   const { t, language } = useLanguage();
- 
+  const [lightbox, setLightbox] = useState(null);
+
   const projects = [
     {
+      thumbnail: thumbForecasting,
       icon: "fas fa-boxes-stacked",
       title: t('project1Title'),
       shortDesc: t('project1Badge'),
       description: t('project1Desc'),
+      tags: ["XGBoost", "EOQ", "ROP", "Streamlit"],
       metrics: [
         { value: t('project1Metric1'), label: t('project1Metric1Label') },
         { value: t('project1Metric2'), label: t('project1Metric2Label') },
@@ -20,10 +28,12 @@ function Projects() {
       liveLink: "https://inventory-ml-dashboard.streamlit.app"
     },
     {
+      thumbnail: thumbDistribution,
       icon: "fas fa-route",
       title: t('project2Title'),
       shortDesc: t('project2Badge'),
       description: t('project2Desc'),
+      tags: ["ILP", "CVRP", "2-opt", "Streamlit"],
       metrics: [
         { value: t('project2Metric1'), label: t('project2Metric1Label') },
         { value: t('project2Metric2'), label: t('project2Metric2Label') },
@@ -35,10 +45,12 @@ function Projects() {
       liveLink: "https://optimasisistemdc.streamlit.app/"
     },
     {
+      thumbnail: thumbSupplier,
       icon: "fas fa-chart-line",
       title: t('project3Title'),
       shortDesc: t('project3Badge'),
       description: t('project3Desc'),
+      tags: ["Regression", "Classification", "ML", "Streamlit"],
       metrics: [
         { value: t('project3Metric1'), label: t('project3Metric1Label') },
         { value: t('project3Metric2'), label: t('project3Metric2Label') },
@@ -49,25 +61,48 @@ function Projects() {
       reportLinkEN: "Supplier Performance Analytics & Risk Prediction System(Eng).pdf",
       liveLink: "https://lead-time-po-late-prediction.streamlit.app"
     }
-  ]
- 
+  ];
+
   return (
     <section className="section" id="projects">
       <div className="section-header">
         <h2><i className="fas fa-microchip"></i> {t('projectsTitle')}</h2>
       </div>
+
       <div className="projects-grid">
         {projects.map((project, idx) => (
           <div className="project-card" key={idx}>
-            <div className="project-card-inner">
+            {/* === THUMBNAIL === */}
+            <div
+              className="project-thumb"
+              onClick={() => setLightbox(project.thumbnail)}
+            >
+              <img src={project.thumbnail} alt={project.title} loading="lazy" />
+              <div className="project-thumb-overlay">
+                <span className="project-badge-overlay">{project.shortDesc}</span>
+              </div>
+            </div>
+
+            {/* === BODY === */}
+            <div className="project-body">
               <div className="project-header">
                 <div className="project-icon">
                   <i className={project.icon}></i>
                 </div>
                 <div className="project-badge">{project.shortDesc}</div>
               </div>
+
               <h3 className="project-title">{project.title}</h3>
               <p className="project-description">{project.description}</p>
+
+              {/* TECH TAGS */}
+              <div className="project-tags">
+                {project.tags.map((tag, i) => (
+                  <span className="tag" key={i}>{tag}</span>
+                ))}
+              </div>
+
+              {/* METRICS */}
               <div className="project-metrics">
                 {project.metrics.map((metric, i) => (
                   <div className="metric" key={i}>
@@ -76,32 +111,53 @@ function Projects() {
                   </div>
                 ))}
               </div>
+
+              {/* IMPACTS */}
               <div className="project-impacts">
                 <div className="impact-header">
                   <i className="fas fa-chart-simple"></i> {t('businessImpact')}
                 </div>
                 <ul>
                   {project.impacts.map((impact, i) => (
-                    <li key={i}>✓ {impact}</li>
+                    <li key={i}>
+                      <i className="fas fa-check"></i>
+                      <span>{impact}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
+
+              {/* LINKS */}
               <div className="project-links">
-                {/* Tampilkan hanya 1 report sesuai bahasa yang aktif */}
                 {language === 'id' && project.reportLinkID && (
-                  <a href={`/${project.reportLinkID}`} target="_blank" rel="noopener noreferrer" className="project-link">
+                  <a
+                    href={`/${project.reportLinkID}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
                     <i className="fas fa-file-pdf"></i> Laporan (ID)
                   </a>
                 )}
 
                 {language === 'en' && project.reportLinkEN && (
-                  <a href={`/${project.reportLinkEN}`} target="_blank" rel="noopener noreferrer" className="project-link">
+                  <a
+                    href={`/${project.reportLinkEN}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                  >
                     <i className="fas fa-file-pdf"></i> Report (EN)
                   </a>
                 )}
 
                 {project.liveLink && (
-                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="project-link live">
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link live"
+                  >
                     <i className="fas fa-external-link-alt"></i> {t('liveDemo')}
                   </a>
                 )}
@@ -110,8 +166,15 @@ function Projects() {
           </div>
         ))}
       </div>
+
+      {/* LIGHTBOX */}
+      {lightbox && (
+        <div className="lightbox" onClick={() => setLightbox(null)}>
+          <img src={lightbox} alt="preview" />
+        </div>
+      )}
     </section>
-  )
+  );
 }
- 
-export default Projects
+
+export default Projects;
